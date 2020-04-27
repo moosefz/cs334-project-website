@@ -1,0 +1,249 @@
+/* FOR CUSTOM FONTS */
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://www.fontzip.com/storage/2019/12/25/provicali/webfonts/provicali-Regular.css');
+
+/* ENCOMPASSES WHOLE PAGE */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* is the full wrapper */
+body {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body > * {
+  padding: 20px;
+}
+
+/* HEADER STARTS HERE */
+.nav-links a {
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+header {
+  order: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 2%;
+  background-color: #24252A;
+}
+
+nav {
+    margin-right: auto;
+}
+
+/* changes cursor to pointer when hover on logo */
+.logo {
+	object-fit: contain;
+  cursor: pointer;
+  width: 135px;
+  height: auto;
+}
+
+/* removes all dots from UL */
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  vertical-align: middle;
+  align-items: center;
+  padding: 0px 20px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+}
+
+.nav-links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+  color: #0088A9;
+}
+
+a.header-signup {
+  transition: all 0.3s ease 0s;
+  font-weight: 500;
+  font-size: 16px;
+  margin-left: 20px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+a.header-signup:hover {
+  color: #0088A9;
+}
+
+.header-login {
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+  float: right;
+}
+
+.header-login button {
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+.header-logout button {
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+.header-login input {
+  width: auto;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: white;
+}
+
+p.welcome {
+  color: white;
+}
+
+/* BODY */
+main {
+  order: 1;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  flex-grow: 1;
+  min-height: 350px;
+  background-color: #f2f2f2;
+}
+
+main > div {
+  display: block;
+  text-align: center;
+}
+
+main h1 {
+  font-family: "provicali", sans-serif;
+  order: 2;
+  text-align: center;
+}
+
+.form-signup {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.form-signup input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+.form-signup input:focus {
+  border: 3px solid #555;
+}
+
+.form-signup button {
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+  float: right;
+}
+
+.signuperror {
+  color: red;
+}
+
+.signupsuccess {
+  color: lime;
+}
+
+.page-footer {
+  color: white;
+  order: 3;
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: #24252A;
+}
+
+.page-footer ul {
+  display: flex;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  list-style: none;
+}
+
+.page-footer ul li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.page-footer img {
+  width: 35px;
+  height: 35px;
+}
+
+/* FOR MOBILE */
+@media screen and (min-width: 550px) {
+  .page-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-footer ul {
+    margin-bottom: 0;
+  }
+}
